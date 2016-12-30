@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:id="@+id/manuel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Commande manuel"
+            android:textSize="10dp"
+            android:background="#006633"
+            android:textColor="#FEFEFE"
+            android:layout_marginRight="10dp"
+            />
+        <Button
+            android:id="@+id/ligne"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Ligne"
+            android:textSize="10dp"
+            android:background="#006633"
+            android:textColor="#FEFEFE"
+            android:layout_marginRight="10dp"
+            />
+
+        <Button
+            android:id="@+id/lumiere"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Lumiere"
+            android:textSize="10dp"
+            android:background="#006633"
+            android:textColor="#FEFEFE"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout">
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/down"
+            android:id="@+id/bas"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/gauche"
+            android:layout_toEndOf="@+id/gauche" />
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/up"
+            android:id="@+id/haut"
+            android:background="@android:color/transparent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/gauche"
+            android:layout_toEndOf="@+id/gauche" />
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/left"
+            android:id="@+id/gauche"
+            android:layout_above="@+id/bas"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/right"
+            android:id="@+id/droite"
+            android:layout_below="@+id/haut"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/quitter"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="quitter"
+        android:textSize="10dp"
+        android:background="#990000"
+        android:textColor="#FEFEFE"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:onClick="Quitter"
+        />
+
+
+</RelativeLayout>
